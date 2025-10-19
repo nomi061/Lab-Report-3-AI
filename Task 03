@@ -1,0 +1,18 @@
+3. Write a Python function to show the first ‘n’ even numbers and then return the sum and product of that even numbers outside the function.
+
+def even_numbers(n):
+    even_list = [2 * i for i in range(1, n + 1)]
+    print("First", n, "even numbers:", even_list)
+    return sum(even_list), product(even_list)
+
+def product(numbers):
+    result = 1
+    for num in numbers:
+        result *= num
+    return result
+
+
+n = int(input("Enter how many even numbers you want: "))
+sum_even, prod_even = even_numbers(n)
+print("Sum of even numbers:", sum_even)
+print("Product of even numbers:", prod_even)
