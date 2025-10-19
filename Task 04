@@ -1,0 +1,15 @@
+4. Write a python program to match two string using functions
+
+
+def match_strings(str1, str2):
+    if str1 == str2:
+        return True
+    else:
+        return False
+
+a = input("Enter first string: ")
+b = input("Enter second string: ")
+if match_strings(a, b):
+    print("Strings match!")
+else:
+    print("Strings do not match!")
