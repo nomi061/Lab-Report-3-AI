@@ -1,0 +1,14 @@
+5. Write a python program to name user login system using function.
+
+def login_system(username, password):
+    stored_username = "Nouman Ahmed Hanifi"
+    stored_password = "001122"
+
+    if username == stored_username and password == stored_password:
+        return "Login successful!"
+    else:
+        return "Invalid username or password."
+
+user = input("Enter username: ")
+pwd = input("Enter password: ")
+print(login_system(user, pwd))
